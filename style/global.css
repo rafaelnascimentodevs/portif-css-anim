@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+@font-face {
+    font-family:"IBM-Plex-Mono";
+    src: url(/fontes/IBMPlexMono-Regular.ttf);
+    font-family: "IBM-italic";
+    src: url(/fontes/IBMPlexMono-Italic.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    background:linear-gradient(45deg,#adb5bd,#ced4da,#212529,#495057);
+    background-size:300% 300%;
+    animation: color 12s ease-in-out infinite;
+
+}
+
+header {
+    margin-bottom: 65px;
+}
+
+.container{
+    display: flex;
+    width:1080px ;
+    height:480px ;
+    gap: 90px;
+    margin-left: 60px; 
+}
+
+.container div h3{
+    font-family:"IBM-Plex-Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+.Navbar {
+    background-color: #000000;
+    display: flex;
+    padding: 16px;
+    font-family:"IBM-Plex-Mono";
+    color: white;
+    border-radius: 10px;
+
+    
+}
+
+.Navbar__Items {
+    display:flex;
+    align-items: center;
+    gap: 50px;
+    align-content: center;
+
+}
+
+.Navbar__Link {
+    display: flex;
+    padding-right: 8px;
+    font-family:"IBM-Plex-Mono", monospace;
+    color: aliceblue;
+    position: center;
+  }
+
+.Navbar__Link img {
+    display: flex;
+    width: 60%;
+    min-height: 10%;
+    position: initial;
+
+}
+
+.Navbar__Link a {
+    margin-left: 180px;
+}
+
+.container-h{
+    display: flex;
+    width: 1080px;
+    height: auto;
+    gap: 100px;
+    margin-left: 200px;
+     
+}
+
+section.comp-section h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.project h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+section.project div.container-p {
+    width: 1080px;
+    height: 500px;
+    background-color: #212529;
+    margin-left: 130px;
+}
+
